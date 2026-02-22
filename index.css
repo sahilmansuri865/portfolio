@@ -1,0 +1,151 @@
+/* RESET & GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /* Makes clicking nav links slide smoothly */
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 70px;
+    background-color: #1a1a1a;
+    color: white;
+    position: fixed; /* Keeps menu at the top */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* HERO SECTION (HOME) */
+.hero-section {
+    /* Using your Unsplash image with a dark tint for readability */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url("https://images.unsplash.com/photo-1526116977494-90748acc0cad");
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ff9900;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #e68a00;
+}
+
+/* ABOUT SECTION */
+.about-section {
+    background-color: #f4f4f4;
+    padding: 100px 10%;
+    text-align: center;
+    color: #333;
+}
+
+.container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 40px auto 0;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+footer {
+    background: #111;
+    color: #666;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+}
